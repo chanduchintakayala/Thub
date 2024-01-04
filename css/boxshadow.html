@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #x{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            background-color: aqua;
+            box-shadow: 4px 4px 5px purple,7px 7px 8px orange;
+            outline: 2px solid green;
+        }
+        p{
+            border: 1px solid blue;
+            display: inline;
+        }
+        h1{
+            border: 1px solid red;
+            display: inline;
+        }
+        span{
+            border: 1px solid rgb(201, 17, 134);
+            display: block;
+        }
+        .a{
+            height: 500px;
+            width: 200px;
+            border: 1px solid red;
+            float: left;
+        }
+        .b{
+            height: 500px;
+            width: 200px;
+            border: 1px solid red;
+            float: left;
+            visibility: hidden;
+        }
+        .b:hover{
+            background-color: blue;
+        }
+        .c{
+            height: 500px;
+            width: 200px;
+            border: 1px solid red;
+            float: left;
+            display: none;
+        }
+        .d{
+            height: 500px;
+            width: 200px;
+            border: 1px solid red;
+            float: left;
+        }
+        .e{
+            height: 500px;
+            width: 200px;
+            border: 1px solid red;
+            float: left;
+        }
+        ul{
+            list-style-type: circle;
+        }
+        ol{
+            list-style-type: upper-roman;
+        }   
+    </style>
+</head>
+<body>
+    <center><h1>box shadow in css</h1></center>
+    <center><div id="x"></div></center>
+    <p>this is block element</p>
+    <h1>this is h1 tag</h1>
+    <span> span tag</span>
+    <br>
+    <div style="height: 500px;width: 1000px;">
+        <div class="a">hi prends</div>
+        <div class="b">bye prends</div>
+        <div class="c">hi prends</div>
+        <div class="d">unordered list
+            <ul>
+                <li>hi</li>
+                <li>hi</li>
+                <li>hi</li>
+                <li>hi</li>
+            </ul>
+        </div>
+        <div class="e">ordered list
+            <ol>
+                <li>hi</li>
+                <li>hi</li>
+                <li>hi</li>
+                <li>hi</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

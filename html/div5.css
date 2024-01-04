@@ -1,0 +1,116 @@
+.a{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+}
+.b{
+    height: 500px;width: 100px;background-color: rgb(213, 32, 32);float: left;
+}
+.c{
+    height: 100px;width: 100px;background-color: aqua;
+}
+.d{
+    height: 300px;width: 100px;background-color: blue;
+}
+.e{
+    height: 100px;width: 100px;background-color: white;
+}
+.f{
+    height: 100px;width: 50px;background-color: orange;float: left;
+}
+.g{
+    height: 100px;width: 50px;background-color: lightgreen;float: right;
+}
+.XII{
+    float: right;
+}
+.h{
+    height: 500px;width: 400px;background-color: rgb(138, 129, 129);float: right;
+}
+.i{
+    height: 100px;width: 400px;background-color: green;
+}
+.j{
+    height: 100px;width: 300px;background-color: rgb(203, 32, 172);float: left;
+}
+.k{
+    height: 100px;width: 100px;background-color: aqua;float: right;
+}
+.l{
+    height: 50px;width: 100px;background-color: rgb(216, 22, 35);
+}
+.m{
+    height: 50px;width: 50px;background-color: blue;float: left;
+}
+.n{
+    height: 50px;width: 50px;background-color: purple;float: right;
+}
+.o{
+    height: 100px;width: 400px;background-color: green;
+}
+.p{
+    height: 300px;width: 400px;background-color: azure;
+}
+.q{
+    height: 300px;width: 150px; background-color: aliceblue;float: left;
+}
+.r{
+    height: 300px;width: 100px;background-color: aliceblue;float: left;
+}
+.s{
+    height: 200px;width: 100px;background-color: antiquewhite;
+}
+.t{
+    height: 200px;width: 50px;background-color: yellow;float: left;
+}
+.u{
+    height: 200px;width: 50px;background-color: orangered;float: right;
+}
+.v{
+    height: 100px;width: 100px;background-color: palevioletred;
+}
+.w{
+    height: 300px;width: 50px;background-color: blue;float: right;
+}
+.x{
+    height: 300px;width: 250px;background-color: azure;float: right;
+}
+.y{
+    height: 100px;width: 250px;background-color: aqua;
+}
+.z{
+    height: 200px;width: 100px;background-color: aliceblue;float: left;
+}
+.I{
+    height: 100px;width: 100px;background-color: brown;
+}
+.II{
+    height: 100px;width: 100px;background-color: brown;
+}
+.III{
+    height: 100px;width: 50px;background-color: green;float: left;
+}
+.IV{
+    height: 100px;width: 50px;background-color: gray;float: left;
+}
+.V{
+    height: 200px;width: 150px;background-color: beige;float: right;
+}
+.VI{
+    height: 200px;width: 50px;background-color: blueviolet;float: left;
+}
+.VII{
+    height: 200px;width: 100px;background-color: rgb(175, 175, 188);float: right;
+}
+.VIII{
+    height: 100px;width: 100px;background-color: darkblue;
+}
+.IX{
+    height: 100px;width: 100px;background-color: white;
+}
+.X{
+    height: 100px;width: 50px;background-color: red;float: left;
+}
+.XI{
+    height: 100px;width: 50px;background-color: rgb(57, 199, 21);float: right;
+}

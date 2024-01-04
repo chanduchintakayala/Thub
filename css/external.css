@@ -1,0 +1,60 @@
+.chandu{
+        font-size: 20px;
+        background-color: aqua;
+        color: purple;
+}
+#ok{
+    font-size: 20px;
+   background-color:blue;
+   color: blueviolet;
+}
+#bye{
+    font-size: 20px;
+    background-color: aquamarine;
+    color: blue;
+}
+span{
+    font-size: 20px;
+    background-color: blanchedalmond;
+    border: 1px solid;
+    color: green;
+}
+*{
+    font-size: 20px;
+    color: blue;
+}
+input[type="tel"]{
+    background-color: aqua;
+    font-size: 20px;
+    color: brown;
+}
+input[type="email"]{
+    background-color: aqua;
+    font-size: 20px;
+    color: rgb(170, 35, 125);
+}
+input[type="text"]{
+    background-color: aqua;
+    font-size: 20px;
+    color: rgb(100, 106, 15);
+}
+a[href]{
+    font-size: 20px;
+    background-color: rgb(195, 36, 36);
+    color: rgb(29, 81, 149);
+}
+a:link{
+    background-color: blue;
+}
+a:visited{
+    color: orange;
+}
+a:hover{
+    background-color: black;
+    color: brown;
+    font-size: 40px;
+    text-decoration: none;
+}
+a:active{
+    color: aquamarine;
+}
