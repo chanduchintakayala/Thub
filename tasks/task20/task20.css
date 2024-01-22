@@ -1,0 +1,18 @@
+.a{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.b{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+@media  screen and (min-width: 600px) {
+    .a{
+        z-index: 3;
+    }
+
+}
