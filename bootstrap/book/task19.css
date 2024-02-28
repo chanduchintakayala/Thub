@@ -1,0 +1,101 @@
+nav{
+    padding-left: 100px;
+}
+#phone{
+    height: 500px;width: 800px;
+}
+#img{
+    height: 630px;width: 800px;
+    display: inline;
+    float: left;
+}
+#form{
+    height: 500px;width: 600px;
+    display: inline;
+    float: left;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.in{
+    width: 250px;
+}
+.left{
+    display: inline;
+    float: left;
+    height: 50px;width: 250px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+input{
+    background-size: 15px;
+    background-repeat: no-repeat;
+    padding-left: 22px;
+    height: 30px;width: 550px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+select{
+    height: 30px;width: 570px;
+    margin-bottom: 10px;
+}
+#contact{
+    background-image: url(https://cdn-icons-png.flaticon.com/128/8089/8089114.png);
+    background-position-y: center;
+    background-position-x: 5px;
+    margin-right: 50px;
+}
+#mail{
+    background-image: url(https://cdn-icons-png.flaticon.com/128/2767/2767188.png);
+    background-position-y: center;
+    background-position-x: 5px;
+}
+#lock{
+    background-image: url(https://cdn-icons-png.flaticon.com/128/3064/3064155.png);
+    background-position-y: center;
+    background-position-x: 5px;
+}
+p{
+    color: gray;
+}
+.button{
+    width: 570px;
+    height: 40px;
+}
+#_{
+    text-decoration: none;
+}
+hr{
+    width: 200px;
+}
+#pa{
+    padding-top: 20px;
+}
+#p{
+    display: inline;
+}
+#r{
+    float: right;
+    position: relative;
+    bottom: 57px;
+    right: 70px;
+}
+hr{
+    width: 250px;
+    margin-top: 30px;
+    float: left;
+    margin-right: 5px;
+    display: inline;
+}
+#Create{
+    background-color: blue;
+}
+#facebook{
+    background-color: darkblue;
+}
+#Twitter{
+    background-color: turquoise;
+}
+#p{
+    display: inline;
+    margin-left: 200px;
+}

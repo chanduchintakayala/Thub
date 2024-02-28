@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <style>
+        /*
+Template: Portefeuille
+Author: Frittt.com using Bootstrap 3
+*/
+
+
+
+.row-merge {
+  width: 100%;
+  *zoom: 1;
+}
+.row-merge:before,
+.row-merge:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row-merge:after {
+  clear: both;
+}
+.row-merge [class*="span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 0%;
+  *margin-left: -0.06944444444444445%;
+}
+.row-merge [class*="span"]:first-child {
+  margin-left: 0;
+}
+.row-merge .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 0%;
+}
+.row-merge .span12 {
+  width: 99.99999999999999%;
+  *width: 99.93055555555554%;
+}
+.row-merge .span11 {
+  width: 91.66666666666666%;
+  *width: 91.59722222222221%;
+}
+.row-merge .span10 {
+  width: 83.33333333333331%;
+  *width: 83.26388888888887%;
+}
+.row-merge .span9 {
+  width: 74.99999999999999%;
+  *width: 74.93055555555554%;
+}
+.row-merge .span8 {
+  width: 66.66666666666666%;
+  *width: 66.59722222222221%;
+}
+.row-merge .span7 {
+  width: 58.33333333333333%;
+  *width: 58.263888888888886%;
+}
+.row-merge .span6 {
+  width: 49.99999999999999%;
+  *width: 49.93055555555555%;
+}
+.row-merge .span5 {
+  width: 41.66666666666666%;
+  *width: 41.597222222222214%;
+}
+.row-merge .span4 {
+  width: 33.33333333333333%;
+  *width: 33.263888888888886%;
+}
+.row-merge .span3 {
+  width: 24.999999999999996%;
+  *width: 24.930555555555554%;
+}
+.row-merge .span2 {
+  width: 16.666666666666664%;
+  *width: 16.59722222222222%;
+}
+.row-merge .span1 {
+  width: 8.333333333333332%;
+  *width: 8.263888888888888%;
+}
+.row-merge .offset12 {
+  margin-left: 99.99999999999999%;
+  *margin-left: 99.8611111111111%;
+}
+.row-merge .offset12:first-child {
+  margin-left: 99.99999999999999%;
+  *margin-left: 99.8611111111111%;
+}
+.row-merge .offset11 {
+  margin-left: 91.66666666666666%;
+  *margin-left: 91.52777777777777%;
+}
+.row-merge .offset11:first-child {
+  margin-left: 91.66666666666666%;
+  *margin-left: 91.52777777777777%;
+}
+.row-merge .offset10 {
+  margin-left: 83.33333333333331%;
+  *margin-left: 83.19444444444443%;
+}
+.row-merge .offset10:first-child {
+  margin-left: 83.33333333333331%;
+  *margin-left: 83.19444444444443%;
+}
+.row-merge .offset9 {
+  margin-left: 74.99999999999999%;
+  *margin-left: 74.8611111111111%;
+}
+.row-merge .offset9:first-child {
+  margin-left: 74.99999999999999%;
+  *margin-left: 74.8611111111111%;
+}
+.row-merge .offset8 {
+  margin-left: 66.66666666666666%;
+  *margin-left: 66.52777777777777%;
+}
+.row-merge .offset8:first-child {
+  margin-left: 66.66666666666666%;
+  *margin-left: 66.52777777777777%;
+}
+.row-merge .offset7 {
+  margin-left: 58.33333333333333%;
+  *margin-left: 58.19444444444444%;
+}
+.row-merge .offset7:first-child {
+  margin-left: 58.33333333333333%;
+  *margin-left: 58.19444444444444%;
+}
+.row-merge .offset6 {
+  margin-left: 49.99999999999999%;
+  *margin-left: 49.86111111111111%;
+}
+.row-merge .offset6:first-child {
+  margin-left: 49.99999999999999%;
+  *margin-left: 49.86111111111111%;
+}
+.row-merge .offset5 {
+  margin-left: 41.66666666666666%;
+  *margin-left: 41.52777777777777%;
+}
+.row-merge .offset5:first-child {
+  margin-left: 41.66666666666666%;
+  *margin-left: 41.52777777777777%;
+}
+.row-merge .offset4 {
+  margin-left: 33.33333333333333%;
+  *margin-left: 33.19444444444444%;
+}
+.row-merge .offset4:first-child {
+  margin-left: 33.33333333333333%;
+  *margin-left: 33.19444444444444%;
+}
+.row-merge .offset3 {
+  margin-left: 24.999999999999996%;
+  *margin-left: 24.86111111111111%;
+}
+.row-merge .offset3:first-child {
+  margin-left: 24.999999999999996%;
+  *margin-left: 24.86111111111111%;
+}
+.row-merge .offset2 {
+  margin-left: 16.666666666666664%;
+  *margin-left: 16.52777777777778%;
+}
+.row-merge .offset2:first-child {
+  margin-left: 16.666666666666664%;
+  *margin-left: 16.52777777777778%;
+}
+.row-merge .offset1 {
+  margin-left: 8.333333333333332%;
+  *margin-left: 8.194444444444443%;
+}
+.row-merge .offset1:first-child {
+  margin-left: 8.333333333333332%;
+  *margin-left: 8.194444444444443%;
+}
+[class*="span"].hide,
+.row-merge [class*="span"].hide {
+  display: none;
+}
+[class*="span"].pull-right,
+.row-merge [class*="span"].pull-right {
+  float: right;
+}
+@media (max-width: 767px) {
+  [class*="span"],
+  .uneditable-input[class*="span"],
+  .row-merge [class*="span"] {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .span12,
+  .row-merge .span12 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .row-merge [class*="offset"]:first-child {
+    margin-left: 0;
+  }
+}
+/*= TYPOGRAPHY
+---------------------------------------------------------------------------------------------- */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+  background: #fff;
+  color: #666;
+  font-size: 14px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.15;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 12px;
+  margin: 0 0 0 5px;
+}
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 11px;
+}
+strong,
+b {
+  color: #555;
+}
+a {
+  color: #0088cc;
+}
+a:hover,
+a:focus {
+  outline: none;
+}
+small,
+.small {
+  font-size: 13px;
+}
+ul,
+menu,
+dir {
+  list-style-type: square;
+}
+form {
+  margin: 0;
+}
+form fieldset {
+  border: 1px solid #e5e6e7;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 25px;
+}
+label {
+  font-family: inherit;
+  font-weight: inherit;
+}
+.lead {
+  font-size: 15px;
+  line-height: 24px;
+}
+.unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.gap-15 {
+  height: 15px;
+}
+.gap-30 {
+  height: 30px;
+}
+.gap-50 {
+  height: 30px;
+}
+.gap-70 {
+  height: 30px;
+}
+/*= FORM
+---------------------------------------------------------------------------------------------- */
+.form-control {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 14px;
+}
+/*= BUTTONS
+---------------------------------------------------------------------------------------------- */
+.btn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border-width: 2px;
+  font-family: 'Roboto', Arial, sans-serif;
+  border-color: transparent;
+}
+.btn:hover {
+  border-color: transparent;
+}
+.btn-outline {
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+  background: none;
+  color: #fff;
+}
+.btn-outline:hover,
+.btn-outline.active {
+  border-color: #fff;
+  color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.btn-inverse {
+  background: #1e1e1e;
+  color: #fff;
+}
+.btn-inverse:hover {
+  background: #2f2f2f;
+  color: #fff;
+}
+/*= HEADER
+---------------------------------------------------------------------------------------------- */
+.header .navbar {
+  background: #fff;
+}
+.header .navbar-nav > li > a {
+  font-size: 14px;
+  color: #555;
+}
+/*= SECTIONS
+---------------------------------------------------------------------------------------------- */
+.section {
+  padding: 100px 0;
+}
+.section.type-1 {
+  background: #2a333b;
+  color: #a5b3bf;
+}
+.section.type-1 h1,
+.section.type-1 h2,
+.section.type-1 h3,
+.section.type-1 h4,
+.section.type-1 h5,
+.section.type-1 h6,
+.section.type-1 strong,
+.section.type-1 b {
+  color: #fff;
+}
+.section.type-1 h4 {
+  color: #00a0dc;
+  border-color: #313b44;
+}
+.section.type-1 hr {
+  border-color: #313b44;
+}
+.section.type-1 .form-control {
+  background: #384048;
+  border-color: transparent !important;
+  color: #a5b3bf;
+  -o-transition: background-color 0.3s linear;
+  -ms-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+  /* ...and now override with proper CSS property */
+
+  transition: background-color 0.3s linear;
+}
+.section.type-1 .form-control:focus {
+  background: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.section.type-2 {
+  background: #fff;
+}
+.section.type-3 {
+  background: #f0f2f4;
+}
+.section.type-4 {
+  background: #00a0dc;
+}
+.section.big {
+  height: 100%;
+}
+.section.splash {
+  background: url(../images/header/headerbg.jpg) fixed no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.section.splash h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.section-headlines {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.section-headlines > h2 {
+  font-size: 32px;
+}
+.section-headlines > h4 {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: #00a0dc;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+.section-headlines > div {
+  line-height: 1.8;
+}
+
+/*= SPLASH
+---------------------------------------------------------------------------------------------- */
+.splash-cover {
+  background: #363b48;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+.splash-block {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.splash-block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+  /* Adjusts for spacing */
+
+}
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.splash-block p { color:#fff !important; font-size:20px }
+/*= JUMPER
+---------------------------------------------------------------------------------------------- */
+.jumper {
+  height: 0;
+  position: relative;
+  top: -50px;
+}
+/*= WORK
+---------------------------------------------------------------------------------------------- */
+.work-thumb {
+  display: block;
+}
+.work-content {
+  background: #fff;
+  padding: 15px;
+}
+/*= SERVICES
+---------------------------------------------------------------------------------------------- */
+.gallery-control {
+  margin: 0 0 30px;
+  text-align:center;
+}
+#Grid {
+  font-size: 0;
+  line-height: 0;
+  text-align: justify;
+  display: inline-block;
+  width: 100%;
+}
+#Grid .mix {
+  opacity: 0;
+  display: none;
+  width: 20%;
+  vertical-align: top;
+  font-size: 14px;
+}
+#Grid .mix > div .media-thumb {
+  position: relative;
+  overflow: hidden;
+}
+#Grid .mix > div .media-thumb img {
+  display: block;
+  max-width: 100%;
+}
+#Grid .mix > div .media-thumb:hover .media-desc {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+#Grid .mix > div .media-desc {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background: #00a0dc  ;
+  background: rgba(132,194,37, 0.8);
+  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 20px;
+  -o-transition: opacity .3s linear;
+  -ms-transition: opacity .3s linear;
+  -moz-transition: opacity .3s linear;
+  -webkit-transition: opacity .3s linear;
+  /* ...and now override with proper CSS property */
+
+  transition: opacity .3s linear;
+}
+#Grid .mix > div .media-desc > div {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#Grid .mix > div .media-desc b {
+  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+}
+#Grid .mix > div .media-detail {
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+  padding: 10px;
+  margin: 0 10px;
+  line-height: 20px;
+  display: none;
+}
+@media (max-width: 1020px) {
+  #Grid .mix {
+    width: 25%;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #Grid .mix {
+    width: 33.333333%;
+  }
+}
+@media (max-width: 767px) {
+  #Grid .mix {
+    width: 100%;
+  }
+}
+
+/*= CLIENTS
+---------------------------------------------------------------------------------------------- */
+#clients { background:#f7f7f7; padding:40px 0;   border-bottom: 1px solid #E5E5E5;}
+#clients .col-lg-2 { text-align:center;}
+
+
+
+/*= FEATURES
+---------------------------------------------------------------------------------------------- */
+.features .media > i {
+  font-size: 28px;
+  line-height: 55px;
+  margin-right: 25px;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #eee;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.features .media + .media {
+  margin-top: 0;
+}
+.stats { background:#f7f7f7;}
+.stats i {
+	  font-size: 28px;
+	  line-height: 55px;
+	  padding:15px;
+	  color:#fff;
+	  width: 60px;
+	  height: 60px;
+	  background:#00a0dc;
+	  -webkit-border-radius: 50%;
+	  -moz-border-radius: 50%;
+	  border-radius: 50%;
+	  text-align: center;
+	  margin-right:10px;
+	  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	}
+
+.stats h3{ color:#444; font-size: 25px;}
+
+/*= TEAM
+---------------------------------------------------------------------------------------------- */
+.team_item {
+	margin-bottom:30px;
+	text-align:center;
+}
+.team_body {padding: 25px 15px 31px 15px;
+}
+.team_item .img_block {margin: 0;
+}
+.team_item a{ text-decoration:none;}
+
+.team_item .img_block img {
+	max-width:100%;
+	width:auto;
+	margin:auto;
+}
+.team_body h5 {
+	line-height:20px;
+	font-size:18px;
+	font-weight:400;
+	padding:0;
+	margin:0 0 11px 0;
+	color:#2c2b2b;
+	text-transform:uppercase;
+}
+.team_body h6 {
+	line-height:20px;
+	font-size:15px;
+	font-weight:300;
+	padding:0;
+	margin:0 0 3px 0;
+	color:#2c2b2b;
+}
+
+ 	
+/*= PRICING PLANS
+---------------------------------------------------------------------------------------------- */
+.pricing-plans .plan-name { text-align:center;}
+.pricing-plans .plan-name h2 {
+  background: #1e1e1e;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+    padding: 50px 25px;
+  margin: 0;
+  color: #fff;
+}
+
+.pricing-plans .plan-featured .plan-name h2 {
+  background: #00a0dc;
+}
+
+.pricing-plans .plan-price {
+  padding: 25px;
+  color: #444;
+}
+.pricing-plans .plan-price > b {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+.pricing-plans .plan-details {
+  padding: 0 15px;
+  background: #f5f5f5;
+}
+.pricing-plans .plan-details > div {
+  padding: 15px 0;
+}
+.pricing-plans .plan-details > div + div {
+  border-top: 1px solid #eee;
+}
+.pricing-plans .plan-action {
+  background: #f5f5f5;
+  border-top: 0;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  padding: 15px;
+}
+/*= SOCIAL LINKS
+---------------------------------------------------------------------------------------------- */
+.person .person-avatar {
+  margin-right: 20px;
+}
+
+.avatar { width:100px;}
+/*= SOCIAL LINKS
+---------------------------------------------------------------------------------------------- */
+.social-links {
+  font-size: 30px;
+}
+.social-links.size-big {
+  font-size: 40px;
+}
+.social-links a {
+  color: #aaa;
+  text-decoration: none !important;
+}
+.social-links a:hover {
+  color: #00a0dc  ;
+}
+/*= BRANDS
+---------------------------------------------------------------------------------------------- */
+.brands .brand {
+  border: 1px solid #eee;
+  padding: 30px;
+  text-align: center;
+}
+/*= FOOTER
+---------------------------------------------------------------------------------------------- */
+.footer {
+  background: #242b32;
+  color: #a5b3bf;
+  font-size: 13px;
+  padding: 20px 0;
+}
+.footer * {
+  line-height: 20px;
+}
+.footer .link-social {
+  color: inherit;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  margin-left: 15px;
+  text-decoration: none !important;
+  font-size: 18px;
+}
+.footer .link-social:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.section-contact .address-row {
+  display: table;
+  width: 100%;
+}
+.section-contact .address-sign {
+  display: table-cell;
+  width: 30px;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.section-contact .address-info {
+  display: table-cell;
+}
+
+/*= EMAIL SUBSCRIPTION---------------------------------------------------------------------------------------------- */
+
+.email-susbscription input[type="email"] {width: 91%;
+  max-width: 600px;
+  height: 56px;
+  padding: 0 4%;
+  background-: #fff;
+  border:1px solid #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 0 10px 0 0;
+
+}
+.email-susbscription h1 { color:#fff;}
+.email-susbscription p{ color:#fff; margin-bottom:30px; }
+.email-susbscription .btn {
+	  padding: 17px;
+	  }
+/*= BOOTSTRAP OVERWRITE: ACCORDIANS
+---------------------------------------------------------------------------------------------- */
+.panel-group .panel {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.panel-group .panel + .panel {
+  border-top: 1px solid #eee;
+  margin-top: 0;
+  padding-top: 10px;
+}
+.panel-group .panel-heading {
+  padding: 0 0 10px;
+}
+.panel-group .panel-body {
+  padding: 5px 0 15px;
+  border-top: 0 !important;
+}
+.panel-title {
+  font-size: 18px;
+}
+.panel-title a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none !important;
+}
+.panel-title a i {
+  color: #bbb;
+  font-size: 14px;
+  height: 23px;
+  line-height: 23px;
+  float: left;
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+.panel-title a .icon-minus {
+  display: none;
+}
+.panel-title a.collapsed .icon-minus {
+  display: block;
+}
+.panel-title a.collapsed .icon-plus {
+  display: none;
+}
+/*= TESTIMONIAL
+---------------------------------------------------------------------------------------------- */
+#carousel-testimonial {
+  margin-top: 50px;
+}
+.testimonial {
+  background: #f9f9f9;
+  padding: 40px;
+}
+.testimonial-avatar {
+  padding-left: 30px;
+}
+.testimonial-avatar img {
+  width: 100px;
+  height: auto;
+}
+.testimonial-content .lead {
+  border-left: 1px solid #ddd;
+  padding-left: 30px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.carousel-controller {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.dis-table {
+  display: table;
+  width: 100%;
+}
+.dis-tablecell {
+  display: table-cell;
+  vertical-align: top;
+}
+@media (max-width: 767px) {
+  .section.splash h1 {
+    font-size: 40px;
+  }
+  .person-avatar img {
+    width: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /*= RESPONSIVE RESET
+  ---------------------------------------------------------------------------------------------- */
+}
+@media (max-width: 979px) {
+  /*= RESPONSIVE RESET
+  ---------------------------------------------------------------------------------------------- */
+}
+
+#success{
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	color: green;
+	display:none;
+}
+#error{
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	color: red;
+	display:none;
+}
+        .first{
+            background-image: url(background1.jpg);
+            padding-top: 50px;
+            padding-bottom: 90px;
+        }
+        .second{
+            background-image: url(background1.jpg);
+            padding-top: 50px;
+            padding-bottom: 90px;
+        }
+        .our{
+            border: 1px solid white;
+            display: inline;
+            margin-left: 40%;
+            color: white;
+            padding: 5px;
+            float: left;
+            margin-right: 2px;
+        }
+        .tablet{
+            border: 1px solid white;
+            display: inline;
+            color: white;
+            padding: 5px;
+            float: left;
+            margin-right: 2px;
+        }
+        .desktop{
+            border: 1px solid white;
+            display: inline;
+            color: white;
+            padding: 5px;
+            float: left;
+            margin-right: 2px;
+        }
+        .hire{
+            border: 1px solid white;
+            display: inline;
+            color: white;
+            padding: 5px;
+            display: inline;
+            float: left;
+            margin-right: 2px;
+        }
+        .services{
+            color: rgb(91, 102, 218);
+            border: 1px solid white;
+            height: 40px;
+            text-align: center;
+            padding: 10px;
+        }
+        .content1{
+            text-align: center;
+            color: gray;
+        }
+        .img{
+            height: 300px;
+            margin-left: 200px;
+        }
+        .text{
+            height: 60px;
+            width: 550px;
+            margin-bottom: 10px;
+        }
+        .i1{
+            height: 40px;
+            border: 1px solid gray;
+            border-radius: 20px;
+            float: left;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        .p1{
+            height: 200px;
+            width: 20%;
+            float: left;
+        }
+        #bro{
+            background-color: gray;
+        }
+        #car{
+            width: 25%;
+            float: left;
+            background-color: gray;
+            margin-left: 90px;
+            margin-top: 50 px;
+            margin-bottom: 50px;
+        }
+        .ser{
+            background-color: gray;
+            color: rgb(32, 48, 218);
+            border: 1px solid gray;
+            height: 40px;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .plans{
+            color: rgb(32, 48, 218);
+            height: 40px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .basic{
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 25%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 140px;
+            float: left;
+        }
+        .hot{
+            background-color: rgb(123, 123, 210);
+            color: white;
+            text-align: center;
+            width: 25%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 30px;
+            float: left;
+        }
+        .enterprize{
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 25%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 30px;
+            float: left;
+        }
+        .basic1{
+            background-color: lightslategray;
+            text-align: center;
+            width: 25%;
+            margin-left: 140px;
+            float: left;
+            padding: 2px;
+        }
+        .hot1{
+            background-color: lightslategray;
+            text-align: center;
+            width: 25%;
+            margin-left: 30px;
+            float: left;
+            padding: 2px;
+        }
+        .enterprize1{
+            background-color: lightslategray;
+            text-align: center;
+            width: 25%;
+            margin-left: 30px;
+            float: left;
+            padding: 2px;
+        }
+        .images1{
+            width: 100%;
+            height: 200px;
+        }
+        .img1{
+            margin-left: 200px;
+            width: 20%;
+            height: 200px;
+            float: left;
+            display: inline;
+        }
+        .img2{
+            width: 20%;
+            height: 200px;
+            float: left;
+            display: inline;
+            margin-left: 50px;
+            position: relative;
+            left: 70px;
+        }
+        .img3{
+            width: 10%;
+            height: 200px;
+            float: left;
+            display: inline;
+            margin-left: 0px;
+        }
+        .di1{
+            width: 20%;
+            height: 200px;
+            float: left;
+            display: inline;
+            text-align: center;
+            margin-left: 200px;
+            margin-top: 10px;
+            margin-bottom: 100px;
+        }
+        .di2{
+            width: 20%;
+            height: 200px;
+            float: left;
+            display: inline;
+            text-align: center;
+            margin-left: 125px;
+            margin-top: 10px;
+            margin-bottom: 100px;
+        }
+        .di3{
+            width: 20%;
+            height: 200px;
+            float: left;
+            display: inline;
+            text-align: center;
+            margin-left: 125px;
+            margin-top: 10px;
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="first">
+                <div class="col-12">
+                    <h1 style="text-align: center; color: white;">portefeuille-free one page website template</h1>
+                    <p style="text-align: center; color: white;">Innovative & modern Template.Responsive,one page,bootstrap3.</p>
+                    <br>
+                    <div class="our">our portofolio</div>
+                    <div class="hire">Hire us</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col12">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+    <center><button class="services">OUR SERVICES</button></center>
+    <br>
+    <p class="content1">We love creating strategies for the web.All kind of brands hire us. we make difficult things easy.but never take anything lightly</p>
+    <br>
+    <div class="row">
+    <div>
+        <div style="float: left; width: 40%;">
+            <img src="img.jpg" alt="" class="img">
+        </div>
+        <div style="float: left;width: 30%;">
+            <div class="text">
+                <img src="rench.png" alt="" class="i1">
+                <h6>websites</h6>
+                <p>contrary to popular beleif .loreem ipusm is not simply random text</p>
+            </div>  
+            <div class="text">
+                <img src="rench.png" alt="" class="i1">
+                <h6>social media campaigns</h6>
+                <p>contrary to popular beleif .loreem ipusm is not simply random text</p>
+            </div>  
+            <div class="text">
+                <img src="rench.png" alt="" class="i1">
+                <h6>ios and android apps</h6>
+                <p>contrary to popular beleif .loreem ipusm is not simply random text</p>
+            </div>   
+            <div class="text">
+                <img src="rench.png" alt="" class="i1">
+                <h6>CMS and web applications</h6>
+                <p>contrary to popular beleif .loreem ipusm is not simply random text</p>
+            </div>    
+        </div>
+    </div>
+</div>
+<br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <div class="d1" style="margin-left: 20px;">
+                    <h6>our skills</h6>
+                    <p>HTML AND CSS</p>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                      <hr>
+                      <p>mobile app development</p>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 25%"></div>
+                      </div>
+                      <hr>
+                      <p>software development</p>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 50%"></div>
+                      </div>
+                      <hr>
+                      <p>search engine organisation</p>
+                      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 75%"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d2">
+                    <h5>responsive layout</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci et necessitatibus odit sint vero eligendi quod, ipsum ut nobis! Distinctio facere quaerat neque labore quas eos saepe et optio aut, rerum aliquam doloribus odio molestias. Dignissimos, voluptatibus accusantium tenetur maiores tempora iste quibusdam similique, officia, tempore debitis praesentium? Fugiat, culpa.</p>
+                    <hr>
+                    <h5>- Retina Ready</h5>
+                    <hr>
+                    <h5>built using bootstrap 3</h5>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d3">
+                    <h5>Get To Now Us</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo incidunt odit rem quam. Expedita numquam nostrum fuga repellat ipsam consequatur explicabo laboriosam quis. Iusto fuga, accusamus quasi et minus eos facilis unde earum? Accusantium, beatae doloremque quibusdam at cupiditate possimus cumque voluptatum perferendis explicabo inventore odio quos enim. Animi, suscipit.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta laudantium architecto vitae libero quis cumque consequatur, temporibus, repudiandae at quisquam eum est qui blanditiis nemo sit atque laborum necessitatibus eius provident velit minima delectus. Debitis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="second">
+                <div class="col-12">
+                    <h1 style="text-align: center; color: rgb(15, 81, 116);">FEATURED WORKS</h1>
+                    <h3 style="text-align: center; color: white;">Exceptional work.stunning viewpoints</h3>
+                    <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam rerum voluptatibus, ipsum corrupti officiis distinctio molestias nesciunt nostrum est? Atque, praesentium similique. Quaerat mollitia magni commodi nihil sapiente id!</p>
+                    <br>
+                    <div>
+                    <div class="our">All</div>
+                    <div class="hire">phone</div>
+                    <div class="tablet">tablet</div>
+                    <div class="desktop">desktop</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: lightcyan;">
+        <div class="row">
+            <img src="p1.jpg" alt="" class="p1">
+            <img src="p2.webp" alt="" class="p1">
+            <img src="p3.jpg" alt="" class="p1">
+            <img src="p4.jpg" alt="" class="p1">
+            <img src="p1.jpg" alt="" class="p1">
+        </div>
+        <div class="row">
+            <img src="p1.jpg" alt="" class="p1">
+            <img src="p2.webp" alt="" class="p1">
+            <img src="p3.jpg" alt="" class="p1">
+            <img src="p4.jpg" alt="" class="p1">
+            <img src="p1.jpg" alt="" class="p1">
+        </div>
+    </div>
+    <div class="container-fluid">
+    <div id="bro">
+        <center><button class="ser">FUN STATS</button></center>
+        <div class="row">
+            <div id="car">
+                <div class="card-body"><img src="tea.png" alt="" style="width: 40px;float: left;margin-right: 10px;"><h1>17 Awards</h1></div>
+                <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid a delectus hic adipisci doloremque iste porro omnis, consequuntur asperiores tenetur!</div>
+            </div>
+            <div id="car">
+                <div class="card-body"><img src="tea.png" alt="" style="width: 40px;float: left;margin-right: 10px;"><h1>17 Awards</h1></div>
+                <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid a delectus hic adipisci doloremque iste porro omnis, consequuntur asperiores tenetur!</div>
+            </div>
+            <div id="car">
+                <div class="card-body"><img src="tea.png" alt="" style="width: 40px;float: left;margin-right: 10px;"><h1>17 Awards</h1></div>
+                <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid a delectus hic adipisci doloremque iste porro omnis, consequuntur asperiores tenetur!</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <center><button class="plans">pricing plans</button></center>
+    <h5 style="text-align: center;">Our pricing packages</h5>
+    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ea temporibus exercitationem quaerat voluptatem, architecto, dolore necessitatibus ex, deleniti quibusdam inventore atque saepe possimus porro dolor. Similique voluptatibus fugit, fugiat totam aut laboriosam voluptate error molestiae omnis molestias eveniet? Porro.</p>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="basic">
+            <h5>Basic</h5>
+            <h3>$10/month</h3>
+        </div>
+        <div class="hot">
+            <h5>Hot</h5>
+            <h3>$15/month</h3>
+        </div>
+        <div class="enterprize">
+            <h5>enterprize</h5>
+            <h3>$30/month</h3>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+        <div class="basic1">
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;"> Awesome Services</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">Custom hosting</p><h1 style="float: right;height: 15px;display: inline;">*</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">monthly Document</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">unlimited access</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">24/7 support</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <br>
+            <button style="width: 96%;background-color: black;color: white;margin-bottom: 10px;">BUy</button>
+        </div>
+        <div class="hot1">
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;"> Awesome Services</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">Custom hosting</p><h1 style="float: right;height: 15px;display: inline;">*</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">monthly Document</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">unlimited access</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">24/7 support</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <br>
+            <button style="width: 96%;background-color:  rgb(123, 123, 210);color: white;margin-bottom: 10px;border-color:  rgb(123, 123, 210);">BUy</button>
+        </div>
+        <div class="enterprize1">
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;"> Awesome Services</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">Custom hosting</p><h1 style="float: right;height: 15px;display: inline;">*</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">monthly Document</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">unlimited access</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <hr>
+            <div style="height: 22px;">
+                <p style="float: left;height: 15px;display: inline;">24/7 support</p><h1 style="float: right;height: 15px;display: inline;">-</h1>
+            </div>
+            <br>
+            <button style="width: 96%;background-color: black;color: white;margin-bottom: 10px;">BUy</button>
+        </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div style="background-color: lightslategray;">
+            <center><button class="ser">OUR TEAM</button></center>
+            <h3 style="text-align: center;">we are a small team with lot of friends!</h3>
+            <p style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, officia! Possimus eum quam doloribus exercitationem quo vitae inventore facere explicabo?</p>
+            <div class="images1">
+                <img src="img1.jpg" alt="" class="img1">
+                <img src="img2.jpg" alt="" class="img2">
+                <img src="img3.jpg" alt="" class="img1">
+            </div>
+            <div class="images1">
+                <div class="di1">
+                    <h3>JHON DONGA</h3>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ducimus reiciendis magni dolores possimus consectetur, temporibus aperiam maxime fugiat esse suscipit?</p>
+                </div>
+                <div class="di2">
+                    <h3>alexander jr</h3>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ducimus reiciendis magni dolores possimus consectetur, temporibus aperiam maxime fugiat esse suscipit?</p>
+                </div>
+                <div class="di3">
+                    <h3>JHON DONGA</h3>
+                    <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ducimus reiciendis magni dolores possimus consectetur, temporibus aperiam maxime fugiat esse suscipit?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="jump5" class="jumper"></div>
+<!-- Testimonials -->
+<div class="section type-2"> 
+  <div class="container">
+    <div class="section-headlines">
+      <h4>Testimonials</h4>
+      <h2>Read our clients talking about us!</h2>
+      <div>We worked on digital strategies for 200 brands worldwide. </div>
+    </div>
+    <div id="carousel-testimonial" class="carousel slide bs-docs-carousel-example">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-testimonial" data-slide-to="0" class=""></li>
+        <li data-target="#carousel-testimonial" data-slide-to="1" class=""></li>
+        <li data-target="#carousel-testimonial" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="testimonial media">
+            <div class="testimonial-avatar pull-right hidden-xs	"> <img src="11.jpeg" class="avatar size-default img-circle" style="float: right;"> </div>
+            <div class="testimonial-content media-body">
+              <p class="lead"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+              Founder at Frittt.com - <b>John Donga</b> </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controller btn-group"> <a class="btn btn-xs btn-inverse" href="#carousel-testimonial" data-slide="prev"> <i class="icon-angle-left"></i> </a> <a class="btn btn-xs btn-inverse" href="#carousel-testimonial" data-slide="next"> <i class="icon-angle-right"></i> </a> </div>
+    </div>
+  </div>
+</div>
+
+<!-- Subscription -->
+<section class="section type-4 email-susbscription">
+
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-3">
+    	<img width="200" height="180" src="msg.png" alt="email">
+    </div>
+    
+    <div class="col-lg-9">
+    <h1>Subscribe to our newsletter and never miss any update!</h1>
+    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur sedits aut odit fugit, sed quia magni dolores eos qui ratione sequi nesciunt.</p>
+    
+                  <form method="" action="">
+                    <p>
+                      <input type="email" name="EMAIL" placeholder="Enter your email address">
+                      <input type="submit" value="Let's get started!" class="btn btn-primary">
+                    </p>
+                  </form>
+    </div>
+    
+       
+    </div>
+  </div>
+</section>
+
+<div id="jump6" class="jumper"></div>
+
+<!-- Contact -->
+ <div class="section type-1 section-contact">
+  <div class="container">
+    <div class="section-headlines">
+      <h4>
+      Contact Us
+      </h4>
+      <h2>Let's have a coffee</h2>
+    </div>
+   
+    <div class="row">
+    <div class="col-lg-4">
+      <address>
+      <div class="address-row">
+        <div class="address-sign"> <i class="icon-map-marker"></i> </div>
+        <div style="address-info"> <b>Free One Page Website Template</b>,<br>
+          Using Twitter Bootstrap 3,<br>
+          Frittt.com </div>
+      </div>
+      </address>
+      <div class="visible-xs visible-sm"> <br class="gap-30" />
+        <hr class="gap-divider" />
+        <br class="gap-30" />
+      </div>
+    </div>
+    <div class="col-lg-7 col-lg-offset-1">
+    <form role="form" action="" method="post" role="form" id="contac_form" name="contact_form">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name *">
+            <br class="gap-15"/>
+          </div>
+          <div class="col-lg-6">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Your Email *">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="message" name="message" rows="8"></textarea>
+      </div>
+      <button id="button-send" class="btn btn-block btn-success">Send Message Now </button>
+    </form>
+	<div id="success">Your message has been successfully!</div>
+	<div id="error">Unable to send your message, please try later.</div>	
+  </div>
+</div>
+
+</div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">Portefeuille - Free One Page Website Template &copy; Frittt.com </div>
+    </div>
+  </div>
+</footer>
+
+<!--Scripts--> 
+<script src="scripts/jquery-1.10.2.min.js"></script> 
+<script src="bootstrap/js/bootstrap.min.js"></script> 
+<script src="scripts/jquery.smooth-scroll.min.js"></script> 
+<script src="scripts/mixitup/jquery.mixitup.min.js"></script> 
+<script src="scripts/theme.js"></script> 
+<script>
+		$('.nav-tabs a').click(function (e) {
+			e.preventDefault();
+			$(this).tab('show');
+		})
+	</script>
+</body>
+</body>
+</html>
