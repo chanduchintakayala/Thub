@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="sample()">color purple</button>
+    <button id="btn1">color green</button>
+    <button id="btn2">double click color  blue</button>
+    <script>
+        function sample(){
+            document.body.style.backgroundColor="purple";
+            document.getElementById("btn").innerHTML="this is onclick event";
+        }
+        const but=document.getElementById("btn1");
+        but.onclick=sample1;
+        function sample1(){
+            document.body.style.backgroundColor="green";
+        }
+        const a=document.getElementById("btn2");
+        a.addEventListener('dblclick',fun);
+        function fun(){
+            document.body.style.backgroundColor="blue";
+        }
+    </script>
+</body>
+</html>

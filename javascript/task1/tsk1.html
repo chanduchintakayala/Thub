@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table with Add, Edit and Delete Rows</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<script>
+function addRow() {
+  var table = document.getElementById("dataTable");
+  var rowCount = table.rows.length;
+  var row = table.insertRow(rowCount);
+
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  var cell4 = row.insertCell(3);
+
+  cell1.innerHTML = "<input type='text' id='product" + rowCount + "' name='product[]'>";
+  cell2.innerHTML = "<input type='text' id='name" + rowCount + "' name='name[]'>";
+  cell3.innerHTML = "<input type='text' id='price" + rowCount + "' name='price[]'>";
+  cell4.innerHTML = "<button onclick='deleteRow(this)'>Delete</button> <button onclick='editRow(this)'>Edit</button>";
+}
+
+function deleteRow(btn) {
+  var row = btn.parentNode.parentNode;
+  if (confirm("Do you want to delete this record?")) {
+    var table = document.getElementById("dataTable");
+    table.deleteRow(row.rowIndex);
+  }
+}
+function editProduct(product) {
+            const index = products.indexOf(product);
+
+            if (index === -1) {
+                return;
+            }
+
+            const newId = parseInt(prompt("Enter new product ID:", product.id));
+            const newName = prompt("Enter new product name:", product.name);
+            const newPrice = parseInt(prompt("Enter new product price:", product.price));
+
+            if (!newId || !newName || !newPrice) {
+                return;
+            }
+
+            products[index] = { id: newId, name: newName, price: newPrice };
+            displayProducts();
+        }
+        displayProducts();
+function saveRow(btn) {
+  var row = btn.parentNode.parentNode;
+  var productId = row.cells[0].innerHTML;
+  var name = row.cells[1].firstChild.value;
+  var price = row.cells[2].firstChild.value;
+
+  row.cells[0].innerHTML = productId;
+  row.cells[1].innerHTML = name;
+  row.cells[2].innerHTML = price;
+  row.cells[3].innerHTML = "<button onclick='deleteRow(this)'>Delete</button> <button onclick='editRow(this)'>Edit</button>";
+}
+
+</script>
+</head>
+<body>
+
+<h1>Product Details</h1>
+
+<table id="dataTable" border="1">
+  <tr>
+    <th>Product ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Actions</th>
+  </tr>
+  <tr>
+    <td>456789</td>
+    <td>Reame Mobile</td>
+    <td>15000</td>
+    <td><button onclick="deleteRow(this)">Delete</button> <button onclick="editRow(this)">Edit</button></td>
+  </tr>
+  <tr>
+    <td>123456</td>
+    <td>MI Mobile</td>
+    <td>18000</td>
+    <td><button onclick="deleteRow(this)">Delete</button> <button onclick="editRow(this)">Edit</button></td>
+  </tr>
+  <tr>
+    <td>365648</td>
+    <td>Vivo Mobile</td>
+    <td>20000</td>
+    <td><button onclick="deleteRow(this)">Delete</button> <button onclick="editRow(this)">Edit</button></td>
+  </tr>
+</table>
+
+<button onclick="addRow()">Add New</button>
+
+</body>
+</html>

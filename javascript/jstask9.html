@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          table,tr,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            width: 250px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>course  Name</th>
+                <th>course  Number</th>
+                <th>course FEes </th>
+                <th>PLace</th>
+            </tr>
+        </thead >
+        <tbody id="bdy">
+        </tbody>
+    </table>
+    <script>
+        var obj=[{
+            "course_name":"html",
+            "course_number":"23453",
+            "course_fee":64149,
+            "place":"Thub"
+        },
+        {
+            "course_name":"css",
+            "course_number":"66462",
+            "course_fee":8244,
+            "place":"Thub"
+        },
+        {
+            "course_name":"javascript",
+            "course_number":"266455",
+            "course_fee":1221,
+            "place":"Thub"
+        },
+        {
+            "course_name":"bootstarp",
+            "course_number":"32154",
+            "course_fee":1672,
+            "place":"Thub"
+        }];
+        var tbody=document.getElementById("bdy");
+        for(var i=0;i<obj.length;i++){
+            var td=[];
+           var tr= document.createElement("tr");
+            td[0]=document.createElement("td");
+           td[0].innerText=obj[i].course_name;
+            td[1]=document.createElement("td");
+           td[1].innerText=obj[i].course_number;
+            td[2]=document.createElement("td");
+           td[2].innerText=obj[i].course_fee;
+            td[3]=document.createElement("td");
+           td[3].innerText=obj[i].place;
+           tr.appendChild(td[0]);
+           tr.appendChild(td[1]);
+           tr.appendChild(td[2]);
+           tr.appendChild(td[3]);
+           tbody.appendChild(tr);
+        }
+    </script>
+</body>
+</html>

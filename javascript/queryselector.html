@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>queryselector</h1>
+    <p id="ch">querySelector using id</p>
+    <p class="help">queryselector using class</p>
+    <P id="chandu">chandu</P>
+    <P id="chandu">akash</P>
+    <p class="aku">apple</p>
+    <p class="aku">ball</p>
+    <div>1</div>
+    <div>2</div>
+    <script>
+        //query selector
+        document.querySelector("h1").style.backgroundColor="blue";
+        document.querySelector("#ch").style.color="orange";
+        document.querySelector(".help").style.fontSize="50px";
+
+        //by using id
+        const king=document.querySelectorAll('#chandu');
+        king[0].style.backgroundColor='red';
+        king[1].style.backgroundColor='blue';
+
+        //by using classname
+        const queen=document.querySelectorAll('.aku')
+        queen[0].style.color='aqua';
+        queen[1].style.color='brown';
+
+        //by using element
+        const crone=document.querySelectorAll('div');
+        crone[0].style.backgroundColor='green';
+        crone[1].style.backgroundColor='red';
+    </script>
+</body>
+</html>

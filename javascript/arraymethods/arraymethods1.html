@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic Array methods</h1>
+    <h3>open in console</h3>
+    <p>push</p>
+    <p>pop</p>
+    <p>shift</p>
+    <p>unshift</p>
+    <p>concat</p>
+    <p>slice</p>
+    <p>splice</p>
+    <p>indexof</p>
+    <p>sort</p>
+    <script>
+        let name=['chandu','ali','vijay','abhi','aditya'];
+        let sports=['cricket','free fire','cricket','vollyball','batmenton'];
+        name.push('akash')
+        console.log(name);
+        sports.pop();
+        console.log(sports);
+        sports.shift();
+        console.log(sports);
+        sports.unshift("basketball");
+        console.log(sports);
+        let hhh=sports.slice(1,3);
+        console.log(hhh);
+        let hee=sports.splice(1,2,'cricket','kohli');
+        console.log(sports);
+        let help=name.indexOf('vijay');
+        console.log(help);
+        let combined=name.concat(sports);
+        console.log(combined);
+        console.log(combined.sort());
+        console.log(combined.length);
+    </script>
+</body>
+</html>

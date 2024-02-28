@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" placeholder="enetr color to change" onkeydown="bg(this.value)">
+  <script>
+  const del=document.getElementsByTagName("input")
+function bg(chandu){
+  document.body.style.backgroundColor=chandu;
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="">click me</a>
+    <p id="hello">paragraph tags</p>
+    <p class="hii">paragraph 1</p>
+    <p class="hii">paragraph 2</p>
+    <p class="hii">paragraph 3</p>
+    <div tagname="bye">div tag</div>
+    <script>
+        // entire document structure
+        // console.log(document)
+        // console.log(document.body)
+        // console.log(document.head)
+        // by using id
+        const id=document.getElementById('hello');
+        id.style.color='red';
+        id.style.fontSize='30px';
+        id.style.backgroundColor='black';
+        console.log(id);
+
+        //by using classname
+        const clsid=document.getElementsByClassName('hii');
+        clsid[1].style.color='brown';
+        clsid[2].style.backgroundColor='green';
+        clsid[3].style.color='blue';
+        clsid.style.fontSize='40px';
+        console.log(clsid);
+
+        //by using tagname
+        const tagname=document.getElementsByTagName('bye')
+        tagname.style.backgroundColor='blue';
+        tagname.style.height='200px';
+        tagname.style.width='200px';
+        console.log(tagname);
+    </script>
+</body>
+</html>

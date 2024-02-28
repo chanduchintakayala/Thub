@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>open in console</h1>
+    <script>
+        let years=[2000,2005,2010,2015,2020,2024];
+        console.log("old array" +years);
+        let age=years.map(function chandu(ages,index,array){
+            let ch=2024-ages;
+            console.log("index=" +index);
+            console.log("age" +ch);
+            return ages;
+        })
+        console.log('new array' +age);
+        // let ages=years.map(chandu)
+        // function chandu(age,index,array){
+        //     let ch=2024-age;
+        //     console.log("index=" +index);
+        //     console.log("age" +ch);
+        //     return age;
+        // }
+        // console.log(ages);
+        let fruits=['apple','mango','banana','orange','grapes'];
+        var len= fruits.map((fruit,index,array)=> {console.log('new array='+fruit)}); 
+        console.table(len);
+    </script>
+</body>
+</html>

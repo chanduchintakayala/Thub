@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  enter Name:<input type="text" onkeyup="fun(this.value)"id="hii">
+  <p id="bye"></p>
+  <script>
+    function fun(chandu){
+      if(chandu.length<=3){
+       var but=document.getElementById("hii")
+       but.style.backgroundColor="red"
+      console.log("hii")
+      document.getElementById("bye").innerText="lessthan 3"
+      }
+      else{
+        var but=document.getElementById("hii")
+       but.style.backgroundColor="lightgreen"
+       document.getElementById("bye").innerText=""
+      }
+    }
+        document.getElementById("hii").innerHTML=1+parseInt(document.getElementById("hii").innerHTML);
+  </script>
+</body>
+</html>

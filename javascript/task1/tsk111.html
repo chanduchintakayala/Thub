@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table with Add, Edit, and Delete Functionality</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Product Details</h1>
+
+  <table id="productsTable">
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <button onclick="addProduct()">Add New</button>
+
+  <script>
+    const products = [
+      { id: 456789, name: "Realme mobile", price: 15000 },
+      { id: 123456, name: "MI mobile", price: 18000 },
+      { id: 365648, name: "Vivo mobile", price: 20000 }
+    ];
+
+    function displayProducts() {
+      const tbody = document.getElementById("productsTable").getElementsByTagName("tbody")[0];
+      tbody.innerHTML = "";
+
+      for (const product of products) {
+        const row = tbody.insertRow();
+        const idCell = row.insertCell();
+        const nameCell = row.insertCell();
+        const priceCell = row.insertCell();
+        const actionsCell = row.insertCell();
+
+        idCell.textContent = product.id;
+        nameCell.textContent = product.name;
+        priceCell.textContent = product.price;
+
+        const editButton = document.createElement("button");
+        editButton.textContent = "Edit";
+        editButton.onclick = function() {
+          editProduct(product, row);
+        };
+        actionsCell.appendChild(editButton);
+
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.onclick = function() {
+          if (confirm("Are you sure you want to delete this product?")) {
+            deleteProduct(product, row);
+          }
+        };
+        actionsCell.appendChild(deleteButton);
+      }
+    }
+
+    function addProduct() {
+      const id = Math.floor(Math.random() * 1000000);
+      const name = prompt("Enter product name:", "");
+      const price = parseInt(prompt("Enter product price:", ""));
+
+      if (!name || !price) {
+        return;
+      }
+
+      products.push({ id, name, price });
+      displayProducts();
+    }
+
+    function editProduct(product, row) {
+      const idCell = row.cells[0];
+      const nameCell = row.cells[1];
+      const priceCell = row.cells[2];
+
+      const newId = parseInt(prompt("Enter new product ID:", product.id));
+      const newName = prompt("Enter new product name:", product.name);
+      const newPrice = parseInt(prompt("Enter new product price:", product.price));
+
+      if (!newId || !newName || !newPrice) {
+        return;
+      }
+
+      product.id = newId;
+      product.name = newName;
+      product.price = newPrice;
+
+      idCell.textContent = newId;
+      nameCell.textContent = newName;
+      priceCell.textContent = newPrice;
+    }
+
+    function deleteProduct(product, row) {
+      const index = products.indexOf(product);
+
+      if (index !== -1) {
+        products.splice(index, 1);
+      }
+
+      row.parentNode.removeChild(row);
+    }
+
+    displayProducts();
+  </script>
+</body>
+</html>

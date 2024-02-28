@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing text</title>
+    <style>
+        #l1,#l2,#l3{
+            color:blue;
+            font-size: 15px;
+        }
+        button{
+          background-color: red;
+          color: black;
+          border: 0;
+          border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li id = 'l1'>AEC</li>
+        <li id="l2">ACET</li>
+        <li id="l3">ACOE</li>
+        <button onclick="func1()">get full name</button>
+    </ol>
+    <script>
+        function func1(){
+            document.getElementById('l1').innerHTML = 'Aditya Engineering College';
+            document.getElementById('l2').innerHTML = 'Aditya College Of Engineering and Technology';
+            document.getElementById('l3').innerHTML = 'Aditya College Of Engineering ';
+            document.getElementById('l1').style.fontWeight="900";
+            document.getElementById('l1').style.backgroundColor="black";
+            document.getElementById('l2').style.border="thick dotted red";
+            document.getElementById('l3').style.fontWeight="900";
+            const sel=document.querySelector("ol");
+          sel.style.backgroundColor="black"
+          const all=document.querySelectorAll("li")
+          all[0].style.border="thin dotted white"
+          for (let index = 0; index < all.length; index++) {
+            all[index].style.display="inline";
+            const node=document.createElement("div")
+            node.style.display="block"
+            all[index].appendChild(node)
+          }
+          
+          
+        }
+        
+    </script>
+</body>
+</html>

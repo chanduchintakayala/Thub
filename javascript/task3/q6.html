@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>open in console</h1>
+    <script>
+        function fibonacci(n) {
+        if (n <= 1) return n;
+        return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+
+        const number = 10;
+
+        for (let i = 0; i < number; i++) {
+        console.log(fibonacci(i));
+        }
+
+    </script>
+</body>
+</html>

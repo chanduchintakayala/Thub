@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>open in console</h1>
+    <script>
+        let salaries=[40000,50000,60000,70000];
+        console.log(salaries);
+
+        //normal function
+        // salaries.forEach(function myfun(amount,index){
+        //     var hike=amount/10;
+        //     console.log(hike);
+        //     salaries[index]=amount + hike;
+        // })
+        // console.log(salaries)
+
+        //ananomous function
+        // salaries.forEach(myfun)
+        // function myfun(amount,index){
+        //     var hike=amount/10;
+        //     console.log(hike);
+        //     salaries[index]=amount + hike;
+        // }
+        // console.log(salaries)
+
+        // arrow function
+        salaries.forEach((amount,index) =>{
+            var hike=amount/10;
+            console.log(hike);
+            salaries[index]=amount + hike;
+        })
+        console.log(salaries)
+    </script>
+</body>
+</html>
